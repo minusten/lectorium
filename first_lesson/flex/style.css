@@ -1,0 +1,141 @@
+p,li {
+  font-family: 'Arial';
+  font-size: 14px;
+}
+.hr {
+  width: 100%;
+  height: 0.5px;
+  margin-bottom: 30px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  height: 10vh;
+}
+.one {
+  margin-right: 10px;
+  width: 10%;
+  background-color: red
+}
+.two {
+  margin-right: 10px;
+  width: 25%;
+  background-color: green
+}
+.three {
+width: 65%;
+background-color: black
+}
+.content {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.content-left {
+  margin-right: 20px;
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-info {
+padding-left: 10px;
+width: 100%;
+background-color: yellow;
+margin-bottom: 200px
+}
+.left-empty {
+  width: 100%;
+  background-color: red;
+  height: 15vh;
+}
+.content-right {
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info-right {
+padding:10px;
+width: 100%;
+height: 30vh;
+background-color: blue;
+}
+.blocks-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+align-items: stretch;
+}
+.block {
+  margin-right: 10px;
+  width: 19%;
+  height: 25vh;
+  background-color: orange;
+}
+.bottom-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.first-bottom-right {
+  padding:10px;
+  margin-right: 10px;
+  width: 47%;
+  height: 20vh;
+  background-color: pink;
+    margin-bottom: 0;
+}
+.second-bottom-right {
+  padding:10px;
+  margin-right: 10px;
+  width: 47%;
+  height: 20vh;
+  background-color: pink;
+  margin-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.first-footer-block {
+
+  margin-right: 10px;
+  width: 30%;
+  background-color: violet;
+  display: flex;
+}
+.first-footer-block ul {
+  list-style: none;
+  width: 40%;
+}
+.second-footer-block {
+
+  margin-right: 10px;
+  width: 30%;
+  background-color: violet;
+}
+.third-footer-block {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  justify-content: space-between;
+}
+.p1 {
+  margin-top: 0;
+  margin-right: 10px;
+  width: 100%;
+  height: 10vh;
+  background-color: violet;
+  margin-bottom: 50px;
+}
+.p2 {
+  margin-right: 10px;
+  width: 100%;
+  height: 10vh;
+  background-color: violet;
+  margin-bottom: 0;
+}
