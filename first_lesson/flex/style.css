@@ -1,3 +1,4 @@
+
 p,li {
   font-family: 'Arial';
   font-size: 14px;
@@ -99,7 +100,6 @@ align-items: stretch;
 .footer {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 .first-footer-block {
 
