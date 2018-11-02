@@ -1,22 +1,24 @@
 @media only screen and (max-width: 600px){
-.main-container {
-  display: flex;
-  flex-direction: column;
+
+.head{
+  flex-basis: 24%;
 }
 }
+
+
 p,li {
   font-family: 'Arial';
   font-size: 14px;
-
 }
 .head {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 1%;
   height: 10vh;
 }
 .border{
-  border: 1px solid black;
+  border: 0.5px solid black;
   margin-bottom: 1%;
 }
 .one {
@@ -110,6 +112,8 @@ background-color: blue;
 .footer {
   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .first-footer-block {
   min-height: 15vh;
