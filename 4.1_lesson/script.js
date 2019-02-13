@@ -38,3 +38,30 @@ Array.prototype.myMap = function() {
   return map
 }
 console.log([2, 4, 5, 1, -1, 6, 9].myMap())
+
+//Closure
+
+function myInstance () {
+  let num = 0
+  let str = ''
+
+  this.getNum = function () {
+    return num
+  }
+  this.getStr = function () {
+    return str
+  }
+  this.setNum = function (number) {
+    if (typeof num === 'number') {
+      num = number
+    }
+  }
+  this.setStr = function (string) {
+    if (typeof str === 'string') {
+      str = string
+    }
+  }
+}
+let me = new myInstance()
+me.setNum(12)
+console.log(me.getNum())
