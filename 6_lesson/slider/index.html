@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Our life</title>
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+  </head>
+  <body>
+
+  <div class="image_slider">
+    <div><img src="../image/0.jpg" height="550px" ></div>
+    <div><img src="../image/1.jpg" height="550px" ></div>
+    <div><img src="../image/2.jpg" height="550px" ></div>
+    <div><img src="../image/3.jpg" height="550px" ></div>
+    <div><img src="../image/4.jpg" height="550px" ></div>
+    <div><img src="../image/5.jpg" height="550px" ></div>
+    <div><img src="../image/6.jpg" height="550px" ></div>
+    <div><img src="../image/7.jpg" height="550px" ></div>
+    <div><img src="../image/8.jpg" height="550px" ></div>
+    <div><img src="../image/9.jpg" height="550px" ></div>
+
+  </div>
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.image_slider').slick({
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 300,
+  arrows: true,
+});
+    });
+  </script>
+
+
+  </body>
+</html>
