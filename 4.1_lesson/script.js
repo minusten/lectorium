@@ -1,40 +1,40 @@
-let numbers = [2, 4, 5, 1, -1, 6, 9];
-
-function myForEach(numbers){
-  for(let i = 0; i < numbers.length; i++) {
-    return numbers;
+Array.prototype.myForEach = function (func) {
+  for (let i = 0; i < this.length; i++) {
+    func(this[i])
   }
 }
-console.log(myForEach(numbers))
+new Array(2, 4, 5, 1, -1, 6, 9).myForEach(num => console.log(num))
 
-function mySort(numbers){
-    for(var i = 0 ; i <numbers.length; i++) {
-        for(var j = i + 1; j < numbers.length; j++){
-            if(numbers[i] > numbers[j]) {
-                var swap = numbers[i];
-                numbers[i] = numbers[j];
-                numbers[j] = swap;
+Array.prototype.mySort = function() {
+    for (var i = 0 ; i < this.length; i++) {
+        for(var j = i + 1; j < this.length; j++){
+            if(this[i] > this[j]) {
+                var swap = this[i];
+                this[i] = this[j];
+                this[j] = swap;
             }
         }
     }
-return numbers;
+return this;
 }
-console.log(mySort(numbers))
+console.log([2, 4, 5, 1, -1, 6, 9].mySort())
 
-function myFilter(numbers){
-  let even = [];
-  for(let i = 0; i < numbers.length; i++) {
-     if (numbers[i] % 2 === 0) even.push(numbers[i]);
+Array.prototype.myFilter = function (func) {
+  let newArr = [];
+  for (let i = 0; i < this.length; i++) {
+    if (func(this[i])) {
+      newArr.push(this[i])
+    }
   }
-  return even
+  return newArr
 }
-console.log(myFilter(numbers))
+console.log([1, 2, 3].myFilter(number => number % 2 !== 0))
 
-function myMap(numbers){
+Array.prototype.myMap = function() {
   let map = [];
-  for(let i = 0; i < numbers.length; i++) {
-      map[i] = numbers[i] + 5;
+  for(let i = 0; i < this.length; i++) {
+      map[i] = this[i] + 5;
   }
   return map
 }
-console.log(myMap(numbers))
+console.log([2, 4, 5, 1, -1, 6, 9].myMap())
