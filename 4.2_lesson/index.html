@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src='script.js'></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div class='select-cat'>
+      <img src ='1.gif' width="300px" height="220px">
+      <button onclick="setCatImg('1.gif')"> Выбрать котика</button>
+      <img src ='2.gif' width="300px" height="220px">
+      <button onclick="setCatImg('2.gif')"> Выбрать котика</button>
+      <img src ='3.gif' width="300px" height="220px">
+      <button onclick="setCatImg('3.gif')"> Выбрать котика</button>
+    </div>
+
+<div style="display:none">
+ <button id="b1" onclick="feedAnimal(cat)">Есть</button>
+  <button id="b2" onclick="playAnimal(cat)">Играть</button>
+   <button id="b3" onclick="sleepAnimal(cat)">Спать</button> </div>
+   <div class="content"></div>
+  </body>
+</html>
