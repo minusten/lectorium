@@ -12,16 +12,16 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('./slick.eot');
+    src: url('./slick.eot?#iefix') format('embedded-opentype'), url('./slick.woff') format('woff'), url('./slick.ttf') format('truetype'), url('./slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
 .slick-next
 {
-    font-size: 0;
+    font-size: 30px;
     line-height: 0;
-
+    font-weight: bold;
     position: absolute;
     top: 50%;
 
@@ -55,6 +55,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before
 {
+    color: darkGreen;
     opacity: 1;
 }
 .slick-prev.slick-disabled:before,
@@ -66,6 +67,7 @@
 .slick-prev:before,
 .slick-next:before
 {
+
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
@@ -79,38 +81,39 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -20px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -20px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '<';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '>';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -10px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -10px;
 }
 .slick-next:before
 {
-    content: '→';
+    content: '>';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+
+    content: '<';
 }
 
 /* Dots */
