@@ -3,10 +3,10 @@ var myNodeList = document.getElementsByTagName('li'),
 	close = document.getElementsByClassName('close'),
 	list = document.querySelector('ul'),
   done = document.getElementsByClassName('done')
-
 for (var i = 0; i<myNodeList.length; i++) {
 	var span = document.createElement('span'),
 		txt = document.createTextNode('\u00D7');
+
 
 
   span.className = 'done'
@@ -26,6 +26,7 @@ for (var i = 0; i<done.length; i++) {
     var div = this.parentElement;
     div.style.display = 'done';
   }
+
 }
 
 
@@ -62,7 +63,12 @@ function newElem() {
     close[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = 'done';
+
     }
+		done.addEventListener('click', function() {
+			text.style.textDecoration ='line-through';
+
+		})
   }
 
 }
