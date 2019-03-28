@@ -1,6 +1,6 @@
 // -----------------------ЗАДАНИЕ № 1--------------------
 
-var arr =  [2, 2, 2, 2, 2] 
+var arr =  [2, 2, 2, 2, 2]
   var maxLastInd = findMaxLastInd(arr)
   var currentMax = arr[0], water = 0
   for(var i = 1; i < maxLastInd; i++) {
