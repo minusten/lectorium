@@ -36,7 +36,7 @@ var arr =  [2, 2, 2, 2, 2]
 ﻿var arr = ['Новый', 'Год', 'будет', 31, 'января']
 function convertFromArrToObj (arr, obj) {
   arr.forEach(function(item, i) {
-    obj[i] = item
+    obj[item] = i
   })
   return obj
 }
